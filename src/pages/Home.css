@@ -919,42 +919,10 @@
     margin: 14px 0;
   }
 
-  .footer-section p {
+   .footer-section p {
     font-size: 12px;
     line-height: 1.5;
   }
 
 }
-}
-.navbar-links a {
-  color: #000000;
-  font-size: 12px;
-  font-weight: 500;
-  text-decoration: none;
-}
 
-.navbar-links a.active {
-  color: #000000;
-}
-.navbar-links a {
-  color: #000000;
-  font-size: 12px;
-  font-weight: 500;
-  text-decoration: none;
-  position: relative;
-}
-
-.navbar-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: #1F3D8A;
-  transition: width 0.2s ease;
-}
-
-.navbar-links a:hover::after {
-  width: 100%;
-}
