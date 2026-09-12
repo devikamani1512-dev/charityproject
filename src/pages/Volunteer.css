@@ -1,0 +1,816 @@
+/* =========================================================
+   VOLUNTEER PAGE
+========================================================= */
+
+.volunteer-page {
+  width: 100%;
+  background-color: #ffffff;
+  color: #222;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.volunteer-hero {
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.volunteer-hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Hero content */
+
+.volunteer-hero-overlay {
+  position: absolute;
+  z-index: 2;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 90%;
+
+  text-align: center;
+  color: white;
+}
+
+.volunteer-hero-overlay h1 {
+  font-size: 34px;
+  margin: 0 0 12px;
+  font-weight: 700;
+
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.volunteer-hero-overlay p {
+  font-size: 16px;
+  margin: 0 auto 22px;
+
+  line-height: 1.5;
+
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Join button */
+
+.join-volunteer-btn {
+  border: none;
+
+  background-color: #163d8f;
+  color: white;
+
+  padding: 11px 24px;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.join-volunteer-btn:hover {
+  background-color: #0d2e70;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.volunteer-intro {
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 20px auto 30px;
+}
+
+.volunteer-intro h2 {
+  font-size: 20px;
+
+  margin-bottom: 12px;
+
+  color: #111;
+}
+
+.volunteer-intro p {
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  margin: 0;
+
+  color: #333;
+}
+
+
+/* =========================================================
+   SECOND IMAGE
+========================================================= */
+
+.volunteer-image-section {
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 0 auto 25px;
+}
+
+.volunteer-second-image {
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  border-radius: 3px;
+}
+
+
+/* =========================================================
+   WAYS YOU CAN HELP
+========================================================= */
+
+.ways-help {
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 25px auto;
+}
+
+.ways-help h2 {
+  font-size: 18px;
+
+  margin: 0 0 14px;
+
+  color: #111;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CARDS CONTAINER
+========================================================= */
+
+.help-cards {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 7px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   INDIVIDUAL CARD
+========================================================= */
+
+.help-card {
+  height: 64px;
+
+  padding: 0 10px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  background-color: #ffffff;
+
+  border-radius: 5px;
+
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12);
+
+  transition: 0.2s ease;
+}
+
+
+/* =========================================================
+   ACTUAL LOGO IMAGE
+========================================================= */
+
+.help-card::before {
+  content: "";
+
+  width: 33px;
+  height: 33px;
+
+  min-width: 22px;
+
+  margin-right: 9px;
+
+  display: block;
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  background-size: contain;
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-card {
+  border: 1px solid #2457b8;
+}
+
+.education-card h3 {
+  color: #2457b8;
+}
+
+.education-card::before {
+  background-image: url("../assets/educationlogo.png");
+}
+
+
+/* =========================================================
+   MEDICAL
+========================================================= */
+
+.medical-card {
+  border: 1px solid #48a968;
+}
+
+.medical-card h3 {
+  color: #48a968;
+}
+
+.medical-card::before {
+  background-image: url("../assets/medicallogo.png");
+}
+
+
+/* =========================================================
+   FOOD
+========================================================= */
+
+.food-card {
+  border: 1px solid #f39a16;
+}
+
+.food-card h3 {
+  color: #f39a16;
+}
+
+.food-card::before {
+  background-image: url("../assets/food logo.png");
+}
+
+
+/* =========================================================
+   EVENT
+========================================================= */
+
+.event-card {
+  border: 1px solid #d92bd8;
+}
+
+.event-card h3 {
+  color: #d92bd8;
+}
+
+.event-card::before {
+  background-image: url("../assets/eventlogo.png");
+}
+
+
+/* =========================================================
+   ONLINE / REMOTE
+========================================================= */
+
+.online-card {
+  border: 1px solid #1687ee;
+}
+
+.online-card h3 {
+  color: #1687ee;
+}
+
+.online-card::before {
+  background-image: url("../assets/onlineremote.png");
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.help-card h3 {
+  margin: 0;
+
+  font-size: 16px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.help-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   VOLUNTEER FORM
+========================================================= */
+
+.volunteer-form-section {
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 30px auto 50px;
+}
+
+.volunteer-form-section h2 {
+  font-size: 18px;
+
+  margin-bottom: 15px;
+
+  color: #111;
+}
+
+
+/* Form */
+
+.volunteer-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+/* Inputs */
+
+.volunteer-form input,
+.volunteer-form select {
+  width: 100%;
+
+  height: 38px;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #ddd;
+
+  border-radius: 4px;
+
+  background-color: #f5f5f5;
+
+  color: #333;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.volunteer-form input:focus,
+.volunteer-form select:focus {
+  border-color: #163d8f;
+
+  background-color: #ffffff;
+}
+
+
+/* Placeholder */
+
+.volunteer-form input::placeholder {
+  color: #777;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+.become-volunteer-btn {
+  background-color: hsl(223, 76%, 25%) !important;
+  color: #ffffff !important;
+  width: 220px !important;
+  height: 44px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18) !important;
+   font-size: 15px !important;
+}
+
+.become-volunteer-btn:hover {
+  background-color: #07276d;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   THANK YOU MESSAGE
+========================================================= */
+
+.thank-you-message {
+  width: 90%;
+  max-width: 850px;
+
+  margin: 18px auto 10px;
+
+  padding: 12px 18px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  font-weight: 600;
+
+  color: #163d8f;
+
+  background-color: #f3f7ff;
+
+  border: 1px solid #c9d8f5;
+
+  border-radius: 6px;
+
+  box-shadow: 0 2px 6px rgba(22, 61, 143, 0.08);
+
+  animation: thankYouFade 0.5s ease-in-out;
+}
+
+
+/* =========================================================
+   THANK YOU ANIMATION
+========================================================= */
+
+@keyframes thankYouFade {
+
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+/* =========================================================
+   PRIVACY MESSAGE
+========================================================= */
+
+.privacy-text {
+  width: 100%;
+  text-align: center;
+
+  margin: 12px auto 0;
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: #777;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .help-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .volunteer-hero-overlay h1 {
+    font-size: 28px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .volunteer-hero {
+    width: 94%;
+
+    margin-top: 20px;
+  }
+
+  .volunteer-hero-overlay {
+    width: 94%;
+  }
+
+  .volunteer-hero-overlay h1 {
+    font-size: 23px;
+  }
+
+  .volunteer-hero-overlay p {
+    font-size: 13px;
+  }
+
+  .join-volunteer-btn {
+    padding: 9px 18px;
+
+    font-size: 13px;
+  }
+
+
+  .volunteer-intro,
+  .volunteer-image-section,
+  .ways-help,
+  .volunteer-form-section {
+    width: 94%;
+  }
+
+
+  .volunteer-intro h2,
+  .ways-help h2,
+  .volunteer-form-section h2 {
+    font-size: 18px;
+  }
+
+
+  .help-cards {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 7px;
+  }
+
+
+  .help-card {
+    height: 60px;
+
+    padding: 0 9px;
+  }
+
+
+  .help-card::before {
+    width: 20px;
+    height: 20px;
+
+    min-width: 20px;
+
+    margin-right: 7px;
+  }
+
+
+  .help-card h3 {
+    font-size: 10px;
+  }
+
+}
+/* =================================
+   FOOTER LINKS
+================================= */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.footer-container a {
+  color: #52647e;
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.footer-container a:hover {
+  color: #52647e;
+}
+/* =================================
+   FOOTER
+================================= */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.footer-social a {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #52647e;
+  text-decoration: none;
+}
+
+.footer-social a svg {
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
+.footer-social a:hover {
+  color: #52647e;
+}
+
+
+/* =================================
+   COPYRIGHT
+================================= */
+
+.footer-copyright {
+  margin: 0;
+
+  color: #52647e;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 768px) {
+
+  .footer-section {
+    padding: 18px 20px 15px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+  }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+  .footer-section {
+    padding: 18px 15px 15px;
+  }
+
+  .footer-container {
+    gap: 15px;
+  }
+
+  .footer-container a {
+    font-size: 13px;
+  }
+
+  .footer-social {
+    gap: 12px;
+  }
+
+  .footer-social svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer-copyright {
+    font-size: 11px;
+  }
+
+}
+/* =========================================================
+   MOBILE FOOTER
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .footer-container a {
+    font-size: 12px;
+  }
+
+  .footer-social {
+    margin-top: 15px;
+    margin-bottom: 12px;
+    gap: 12px;
+  }
+
+  .footer-social a {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-social a i {
+    color: #52647e !important;
+    font-size: 15px !important;
+    line-height: 1;
+  }
+
+  .footer-copyright {
+    font-size: 11px;
+  }
+
+}
+/* =================================
+   VOLUNTEER FOOTER SOCIAL ICONS
+================================= */
+
+.volunteer-footer-social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.volunteer-footer-social a {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #52647e;
+  text-decoration: none;
+}
+
+.volunteer-footer-social a svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.volunteer-footer-social a:hover {
+  color: #52647e;
+}
+/* Twitter / X icon */
+.volunteer-footer-social .twitter-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #52647e;
+  text-decoration: none;
+}
+
+.volunteer-footer-social .twitter-icon svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+  fill: currentColor;
+}
+
+.volunteer-footer-social .twitter-icon:hover {
+  color: #52647e;
+}

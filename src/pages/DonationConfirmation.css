@@ -1,0 +1,353 @@
+/* ================================
+   CONFIRMATION PAGE
+================================ */
+
+.confirmation-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 35px 35px;
+  background-color: #ffffff;
+}
+
+
+/* ================================
+   THANK YOU IMAGE
+================================ */
+
+.thankyou-image-container {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.thankyou-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* ================================
+   THANK YOU CONTENT
+================================ */
+
+.thankyou-content {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.thankyou-content h1 {
+  margin: 0 0 8px;
+  color: #111111;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.thankyou-subtitle {
+  margin: 0;
+  color: #111111;
+  font-size: 20px;
+}
+
+
+/* ================================
+   IMPACT
+================================ */
+
+.impact-section {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.impact-section h2,
+.support-further-section h2,
+.stay-connected h2 {
+  margin: 0 0 5px;
+  color: #111111;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.impact-description {
+  margin: 0;
+  color: #111111;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* ================================
+   IMPACT CARDS
+================================ */
+.impact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.impact-card {
+  text-align: left;
+  background: none;       /* box background remove */
+  border: none;           /* box border remove */
+  padding: 0;             /* box padding remove */
+  box-shadow: none;       /* box shadow remove */
+}
+
+.impact-card img {
+  width: 100%;
+  height: 230px;
+  display: block;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.impact-card h3 {
+  margin: 8px 0 2px;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);   /* letter shadow - reference image 2 */
+}
+
+.impact-card p {
+  margin: 0;
+  color: #198754;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+
+/* ================================
+   SUPPORT FURTHER
+================================ */
+
+.support-further-section {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.support-action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.donate-again-btn,
+.share-cause-btn {
+  width: 150px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 5px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.donate-again-btn {
+  background-color: #198754;
+  color: #ffffff;
+}
+
+.share-cause-btn {
+  background-color: #e8f0ea;
+  color: #111111;
+}
+
+.donate-again-btn:hover {
+  background-color: #157347;
+}
+
+.share-cause-btn:hover {
+  background-color: #dce8df;
+}
+
+.support-description {
+  margin: 8px auto 0;
+  max-width: 850px;
+  text-align: center;
+
+  color: #111111;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+/* ================================
+   STAY CONNECTED
+================================ */
+
+.stay-connected {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.email-update-box {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 6px;
+  padding: 0 10px;
+
+  background-color: #f4faf6;
+  border-bottom: 1px solid #d7ddd9;
+
+  color: #111111;
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.email-update-box input {
+  width: 20px;
+  height: 20px;
+  accent-color: #198754;
+}
+
+
+/* ================================
+   VOLUNTEER
+================================ */
+
+.become-volunteer-btn {
+  width: 80px;
+  height: 22px;
+
+  margin: 12px auto 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #edf5ef;
+  color: #111111;
+
+  border-radius: 5px;
+
+  font-size: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.become-volunteer-btn:hover {
+  background-color: #dce8df;
+}
+
+
+/* ================================
+   FINAL MESSAGE
+================================ */
+
+.final-thankyou {
+  margin: 12px 0 0;
+
+  color: #198754;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.confirmation-footer {
+  background-color: #e0e1e8;
+  padding: 24px 35px 18px;
+  text-align: center;
+}
+
+.confirmation-footer-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.confirmation-footer-links a {
+  color: #64748b;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.confirmation-footer-links a:hover {
+  color: #1F3D8A;
+}
+
+.confirmation-footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.confirmation-footer-social span {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.confirmation-footer p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.confirmation-footer p a {
+  color: #64748b;
+  text-decoration: none;
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .confirmation-section { 
+    padding: 20px; 
+  } 
+
+  .thankyou-image-container { 
+    height: 220px; 
+  } 
+
+  .impact-cards { 
+    grid-template-columns: 1fr; 
+  } 
+
+  .impact-card img { 
+    height: 180px; 
+  }
+
+  /* Last image - show full image on mobile */
+  .impact-card:last-child img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .confirmation-footer-links { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+  } 
+}
